@@ -1,1 +1,1 @@
-# This App is for trainiig purposes only
+# This App is for training purposes only
