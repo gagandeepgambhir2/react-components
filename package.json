@@ -1,23 +1,26 @@
 {
   "name": "@gagandeepgambhir/react-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "dependencies": {
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
-    "@mui/icons-material": "^6.1.10",
-    "@mui/material": "^6.1.10",
-    "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
     "prepare": "npm run dist",
     "dist": "rm -rf dist/* && babel src/ --out-dir dist --copy-files --no-copy-ignored --ignore src/**/*.stories.jsx"
   },
@@ -33,7 +36,7 @@
     "overrides": [
       {
         "files": [
-          "**/.stories.*"
+          "**/*.stories.*"
         ],
         "rules": {
           "import/no-anonymous-default-export": "off"
@@ -54,19 +57,21 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
-    "@chromatic-com/storybook": "^3.2.2",
-    "@storybook/addon-essentials": "^8.4.7",
-    "@storybook/addon-interactions": "^8.4.7",
-    "@storybook/addon-onboarding": "^8.4.7",
-    "@storybook/blocks": "^8.4.7",
-    "@storybook/preset-create-react-app": "^8.4.7",
-    "@storybook/react": "^8.4.7",
-    "@storybook/react-webpack5": "^8.4.7",
-    "@storybook/test": "^8.4.7",
-    "eslint-plugin-storybook": "^0.11.1",
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/node-logger": "^6.5.10",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "0.0.13",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-named-exports-order": "0.0.2",
     "prop-types": "^15.8.1",
-    "storybook": "^8.4.7",
-    "webpack": "^5.97.1"
+    "webpack": "^5.74.0"
   }
 }
