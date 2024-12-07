@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.TextInput = void 0;
 var _material = require("@mui/material");
 var _Add = _interopRequireDefault(require("@mui/icons-material/Add"));
 var _jsxRuntime = require("react/jsx-runtime");
@@ -34,4 +34,4 @@ const TextInput = _ref => {
     })]
   });
 };
-var _default = exports.default = TextInput;
+exports.TextInput = TextInput;

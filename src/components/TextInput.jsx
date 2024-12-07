@@ -24,4 +24,4 @@ const TextInput = ({ placeholder, value, onChange, onSubmit }) => {
   );
 };
 
-export default TextInput;
+export { TextInput };
