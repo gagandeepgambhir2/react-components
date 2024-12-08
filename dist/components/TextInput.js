@@ -12,10 +12,10 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e
 // UI requirements
 // AddIcon on the left
 // Install MUI icons library npm install @mui/icons-material
-// TextInput on the right
+// TextInput on the right 
 // Event should be fired when the user his the 'return' key
 // The text should be cleared when the user hits the 'return' key
-// Test with Storybook
+// Test with Storybook 
 
 const TextInput = _ref => {
   let {
@@ -33,14 +33,14 @@ const TextInput = _ref => {
     onSubmit: onSubmit,
     square: true,
     sx: {
-      display: "flex",
-      alignItems: "center",
-      padding: "16px"
+      display: 'flex',
+      alignItems: 'center',
+      padding: '16px'
     },
     children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Add.default, {
       fontSize: "large",
       sx: {
-        marginRight: "16px"
+        marginRight: '16px'
       }
     }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_material.InputBase, {
       placeholder: placeholder,
